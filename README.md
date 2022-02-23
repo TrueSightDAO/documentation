@@ -1,5 +1,5 @@
 # Overview
-This document provides instructions on how to access the Mobile API
+This document provides instructions on how to access our Sentiment Analysis engine's API
 
 - [User information](#user-information)
 - [User watchlist](#user-watchlist)
@@ -90,7 +90,7 @@ This end point returns all the brokerages currently supported
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/supported_brokerages
 
@@ -115,7 +115,7 @@ This end point returns the default brokerage of the user
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/brokerage?brokerage=NEW_DEFAULT_BROKERAGE
 
@@ -146,7 +146,7 @@ This end point returns all the brokerages the user has established linkage to
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/linked_brokerages
 
@@ -172,7 +172,7 @@ This end point returns the current holdings of the user
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/holdings
 
@@ -209,7 +209,7 @@ This end point returns the list of companies our system detected abnormalies in
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/large_dips
 
@@ -242,7 +242,7 @@ This end point returns the list of topics our system detected to be most popular
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/popular_topics
 
@@ -271,7 +271,7 @@ This end point returns details about the company given stock symbol
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/company?stock_symbol=:STOCK_SYMBOL
 
@@ -320,7 +320,7 @@ This end point returns the historical daily close data of the company for the pa
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/company/daily_trades?stock_symbol=:STOCK_SYMBOL
 
@@ -358,7 +358,7 @@ This end point returns the historical daily sentiment data of the topic for the 
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/topic/:TOPIC_ID
 
@@ -393,7 +393,7 @@ This api returns if the market is open
 
 ### Sample call
 
-```json
+```
 HTTP GET
   https://truesight.me/api/market_open
 
@@ -418,7 +418,7 @@ Call this API if user wants to enter a position now. Only use this when the mark
 
 ### Sample call
 
-```json
+```
 HTTP POST
   https://truesight.me/api/buy?stock_symbol=:STOCK_SYMBOL
 
@@ -449,7 +449,7 @@ Call this API if user wants to enter a position but the market is not open
 
 ### Sample call
 
-```json
+```
 HTTP POST
   https://truesight.me/api/bid?stock_symbol=:STOCK_SYMBOL
 
@@ -482,7 +482,7 @@ Call this API if user wants to exit a position now. Only use this when the marke
 
 ### Sample call
 
-```json
+```
 HTTP POST
   https://truesight.me/api/sell?stock_symbol=:STOCK_SYMBOL
 
@@ -513,7 +513,7 @@ Call this API if user wants to exit a position but the market is not open
 
 ### Sample call
 
-```json
+```
 HTTP POST
   https://truesight.me/api/ask?stock_symbol=:STOCK_SYMBOL
 
