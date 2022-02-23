@@ -1,5 +1,5 @@
 # Overview
-This document provides instructions on how to access our World Sentiment Analysis API
+This document provides instructions on how to access the Mobile API
 
 - [User information](#user-information)
 - [User watchlist](#user-watchlist)
@@ -28,6 +28,9 @@ This end point returns information about the user
 ```
 HTTP GET
   https://truesight.me/api/me
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN  
 ```
 
 ### Sample response
@@ -61,6 +64,9 @@ This end point returns the companies the user is watching
 ```
 HTTP GET
   https://truesight.me/api/watchlist
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -87,6 +93,9 @@ This end point returns all the brokerages currently supported
 ```json
 HTTP GET
   https://truesight.me/api/supported_brokerages
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -109,6 +118,9 @@ This end point returns the default brokerage of the user
 ```json
 HTTP GET
   https://truesight.me/api/brokerage?brokerage=NEW_DEFAULT_BROKERAGE
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -137,6 +149,9 @@ This end point returns all the brokerages the user has established linkage to
 ```json
 HTTP GET
   https://truesight.me/api/linked_brokerages
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -160,6 +175,9 @@ This end point returns the current holdings of the user
 ```json
 HTTP GET
   https://truesight.me/api/holdings
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -194,6 +212,9 @@ This end point returns the list of companies our system detected abnormalies in
 ```json
 HTTP GET
   https://truesight.me/api/large_dips
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -224,6 +245,9 @@ This end point returns the list of topics our system detected to be most popular
 ```json
 HTTP GET
   https://truesight.me/api/popular_topics
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -250,6 +274,9 @@ This end point returns details about the company given stock symbol
 ```json
 HTTP GET
   https://truesight.me/api/company?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -296,6 +323,9 @@ This end point returns the historical daily close data of the company for the pa
 ```json
 HTTP GET
   https://truesight.me/api/company/daily_trades?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -331,6 +361,9 @@ This end point returns the historical daily sentiment data of the topic for the 
 ```json
 HTTP GET
   https://truesight.me/api/topic/:TOPIC_ID
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -363,6 +396,9 @@ This api returns if the market is open
 ```json
 HTTP GET
   https://truesight.me/api/market_open
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 ### Sample response
@@ -385,6 +421,9 @@ Call this API if user wants to enter a position now. Only use this when the mark
 ```json
 HTTP POST
   https://truesight.me/api/buy?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -413,6 +452,9 @@ Call this API if user wants to enter a position but the market is not open
 ```json
 HTTP POST
   https://truesight.me/api/bid?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -443,6 +485,9 @@ Call this API if user wants to exit a position now. Only use this when the marke
 ```json
 HTTP POST
   https://truesight.me/api/sell?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
@@ -471,6 +516,9 @@ Call this API if user wants to exit a position but the market is not open
 ```json
 HTTP POST
   https://truesight.me/api/ask?stock_symbol=:STOCK_SYMBOL
+
+HEADERS
+  Authorization: Bearer :PERSONAL_ACCESS_TOKEN
 ```
 
 #### Parameters
