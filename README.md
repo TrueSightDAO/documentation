@@ -1,5 +1,5 @@
 # Overview
-This document provides instructions on how to access the Mobile API
+This document provides instructions on how to access our World Sentiment Analysis API
 
 - [User information](#user-information)
 - [User watchlist](#user-watchlist)
